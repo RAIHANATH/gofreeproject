@@ -5,8 +5,8 @@
 <form [formGroup]="signForm" (ngSubmit)="submit()">
     <h3 class="text">Sign up for Free</h3>
     <div class="form-group">
-<input type="text" id="id" formControlName="id" placeholder="Enter ID:">
-<div *ngIf="signForm.get('id').invalid && signForm.get('id').touched" class="text-danger">Id is Mandatory</div>
+<!-- <input type="text" id="id" formControlName="id" placeholder="Enter ID:">
+<div *ngIf="signForm.get('id').invalid && signForm.get('id').touched" class="text-danger">Id is Mandatory</div> -->
 </div>
  
 <br>
@@ -34,8 +34,8 @@
             </div>
                 <br>
                 <div class="form-group">
-                    <input type="password" id="password" formControlName="password" placeholder="Confirm Password :">
-                    <div *ngIf="signForm.get('password').invalid && signForm.get('password').touched " class="text-danger">Confirm Password</div>
+                    <input type="password" id="password1" formControlName="password1" placeholder="Confirm Password :">
+                    <div *ngIf="signForm.get('password1').invalid && signForm.get('password1').touched " class="text-danger">Confirm Password</div>
                 </div>
 <br>
                     <div class="form-group">

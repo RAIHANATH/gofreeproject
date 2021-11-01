@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { Signup1Component } from './signup1/signup1.component';
 import { PasswordValidatorComponent } from './password-validator/password-validator.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { PasswordValidatorComponent } from './password-validator/password-valida
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,ReactiveFormsModule,FormsModule 
+    AppRoutingModule,ReactiveFormsModule,FormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
